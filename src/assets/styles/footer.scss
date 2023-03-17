@@ -1,0 +1,188 @@
+@media only screen and (max-width: 1280px) {
+  footer {
+    a {
+      text-decoration: none;
+      position: relative;
+    }
+    a::before {
+      content: '';
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      transition: 0.2s;
+      background-color: #ffffff;
+    }
+    a:hover:before {
+      width: 100%;
+    }
+    height: 650px;
+    margin-top: 210px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .socialDesktop {
+      display: none;
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+    }
+    .idea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 64px;
+      font-weight: 400;
+      margin-top: 75px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .writeMe {
+      color: #ffffff;
+      height: 55px;
+      width: 218px;
+      font-size: 40px;
+      font-weight: 300;
+      text-align: center;
+    }
+    .socialMobile {
+      margin-top: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        padding: 15px;
+        opacity: 50%;
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+      a:hover {
+        opacity: 100%;
+      }
+    }
+    .mail {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 120px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1280px) {
+  footer {
+    a {
+      text-decoration: none;
+      position: relative;
+    }
+    a::before {
+      content: '';
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      transition: 0.2s;
+      background-color: #ffffff;
+    }
+    a:hover:before {
+      width: 100%;
+    }
+    margin-top: 210px;
+    padding: 0px 220px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 900px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    section {
+      height: 550px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        h1 {
+          font-size: 96px;
+          font-weight: 400;
+        }
+        .writeMe {
+          font-size: 48px;
+          font-weight: 300;
+          color: #ffffff;
+          margin-left: 5px;
+        }
+        .writeMe::before {
+          content: '';
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          transition: 0.2s;
+        }
+        .writeMe:hover:before {
+          width: 0%;
+        }
+
+        .mail {
+          font-size: 32px;
+          font-weight: 400;
+          color: #ffffff;
+          width: 370px;
+        }
+        .mail::before {
+          content: '';
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          transition: 0.2s;
+        }
+        .mail:hover:before {
+          width: 0%;
+        }
+      }
+      .socialMobile {
+        display: none;
+      }
+      .socialDesktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 26px;
+          font-weight: 300;
+          margin: 15px 0px;
+          padding: 0;
+        }
+        h2 {
+          font-size: 20px;
+          font-weight: 300;
+          padding-bottom: 5px;
+          opacity: 60%;
+        }
+      }
+    }
+  }
+}

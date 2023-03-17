@@ -1,0 +1,211 @@
+
+// ============Phone===============
+
+@media only screen and (max-width: 795px) {
+  .favoritesProject {
+      margin-top: 210px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 40px;
+      }
+      .desktopImg {
+        display: none;
+      }
+      .projects {
+        height: 2640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        .project {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .mobileImg {
+            width: 100%;
+            max-width: 450px;
+            max-height: 450px;
+            border-radius: 50px;
+          }
+          h3 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 400;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+            max-width: 450px;
+            padding: 0px 30px;
+          }
+        }
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 21px;
+        font-weight: 400;
+        width: 216px;
+        height: 50px;
+        border: 2px solid #000000;
+        border-radius: 50px;
+        padding: 15px 55px;
+        color: #000000;
+        background-color: #ffffff;
+        margin-top: 45px;
+      }
+      button:hover {
+        color: #ffffff;
+        background-color: #000000;
+      }
+  }
+}
+
+
+@media only screen and (min-width: 795px) and (max-width: 1280px) {
+.favoritesProject {
+  margin-top: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  .projects {
+    height: 1145px;
+    width: 790px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    .project {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .mobileImg {
+        width: 100%;
+        max-width: 390x;
+        max-height: 390px;
+        border-radius: 50px;
+      }
+      .desktopImg {
+        display: none;
+      }
+      h3 {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 30px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        max-width: 450px;
+        max-height: 100px;
+        width: 245px;
+      }
+    }
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 400;
+    width: 216px;
+    height: 50px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    padding: 15px 55px;
+    color: #000000;
+    background-color: #ffffff;
+    margin-top: 45px;
+  }
+  button:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+}
+}
+
+
+@media only screen and (min-width: 1280px)  {
+.favoritesProject {
+  margin-top: 300px;
+  width: 100%;
+  h2 {
+    padding: 0px 220px;
+    font-size: 48px;
+    font-weight: 400;
+  }
+  .projects {
+    background-color: #F3F8FF;
+  }
+  .project {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding: 0px 220px;
+    h3 {
+      font-size: 36px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 300;
+      padding-right: 200px;
+    }
+  }
+  .desktopImg {
+    max-width: 490px;
+    height: 90vh;
+    max-height: 815px;
+  }
+  .mobileImg {
+    display: none;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 21px;
+      font-weight: 400;
+      width: 216px;
+      height: 50px;
+      border: 2px solid #000000;
+      border-radius: 50px;
+      padding: 15px 55px;
+      color: #000000;
+      background-color: #ffffff;
+      margin-top: 110px;
+    }
+    button:hover {
+      color: #ffffff;
+      background-color: #000000;
+    }
+  }
+}
+}
+
+

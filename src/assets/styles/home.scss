@@ -1,0 +1,277 @@
+* {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+h1, h2, h3, p {
+  cursor: default;
+}
+
+// ============Phone===============
+
+@media only screen and (max-width: 795px) {
+  .home-section {
+    height: 660px;
+    padding-top: 90px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .hi {
+      h1 {
+        font-size: 66px;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      h2 {
+        font-size: 33px;
+        font-weight: 300;
+      }
+    }
+    .aboutMe {
+      p {
+        font-size: 22px;
+        font-weight: 300;
+        padding-right: 30px;
+        max-width: 600px;
+      }
+    }
+  }
+  .blog {
+    margin-top: 190px;
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h3 {
+      font-size: 36px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+    .mobileImg {
+      width: 100%;
+      max-width: 450px;
+      max-height: 450px;
+      border-radius: 50px;
+      margin: auto;
+    }
+    .desktopImg {
+      display: none;
+    }
+    p {
+      margin-top: 25px;
+      font-size: 30px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .slick-arrow.slick-next {
+    width: 0px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  a::before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: 0.2s;
+    background-color: #000000;
+  }
+  a:hover:before {
+    width: 0%;
+  }
+}
+
+@media only screen and (min-width: 795px) and (max-width: 1280px) {
+  .home-section {
+    height: 660px;
+    padding-top: 90px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .hi {
+      h1 {
+        font-size: 66px;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      h2 {
+        font-size: 33px;
+        font-weight: 300;
+      }
+    }
+    .aboutMe {
+      p {
+        font-size: 26px;
+        font-weight: 300;
+        padding-right: 30px;
+        max-width: 600px;
+      }
+    }
+  }
+  .blog {
+    margin-top: 190px;
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h3 {
+      font-size: 36px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+    .mobileImg {
+      width: 100%;
+      max-width: 450px;
+      max-height: 450px;
+      border-radius: 50px;
+      margin: auto;
+    }
+    .desktopImg {
+      display: none;
+    }
+    p {
+      margin-top: 25px;
+      font-size: 30px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .slick-arrow.slick-next {
+    width: 0px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  a::before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: 0.2s;
+    background-color: #000000;
+  }
+  a:hover:before {
+    width: 0%;
+  }
+}
+
+
+@media only screen and (min-width: 1280px)  {
+  .home-section {
+    height: 550px;
+    margin-top: 200px;
+    padding: 0px 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .hi {
+      h1 {
+        font-size: 96px;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      h2 {
+        font-size: 48px;
+        font-weight: 300;
+      }
+    }
+    .aboutMe {
+      p {
+        font-size: 28px;
+        font-weight: 300;
+        max-width: 600px;
+      }
+    }
+  }
+  .blog {
+    margin-top: 190px;
+    h3 {
+      font-size: 48px;
+      font-weight: 400;
+      padding-left: 220px;
+    }
+    .post {
+      width: 365px;
+      margin-top: 90px;
+      p {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 22px;
+        font-weight: 400;
+        width: 130px;
+        border-bottom: solid 2px #000000;
+      }
+      p:hover {
+        width: 130px;
+        cursor: pointer;
+        border-bottom: solid 0px #000000;
+      }
+      .desktopImg {
+        max-width: 450px;
+        max-height: 450px;  
+        cursor: pointer;
+      }
+      .mobileImg {
+        display: none;
+      }
+    }
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  a::before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: 0.2s;
+    background-color: #000000;
+  }
+  a:hover:before {
+    width: 0%;
+  }
+}
+
